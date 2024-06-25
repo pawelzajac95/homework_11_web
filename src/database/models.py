@@ -12,7 +12,7 @@ class Contact(Base):
     first_name = Column(String, index=True)
     last_name = Column(String, index=True)
     email = Column(String, unique=True, index=True)
-    phone_number = Column(String, index=True)
+    phone_number = Column(String, index=False)
     birth_date = Column(Date)
     extra_data = Column(String, nullable=True)
 
